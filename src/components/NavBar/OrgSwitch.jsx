@@ -1,19 +1,22 @@
 import React from 'react';
 import './nav.scss';
-import { AiOutlineMenu } from 'react-icons/ai';
+import { AiOutlineArrowLeft, AiOutlineArrowRight } from 'react-icons/ai';
 
-function OrgSwitch({ isMinimized, onToggleMinimize, layout }) {
+function OrgSwitch({ isMinimized, layout, logo, orgName, onToggleMinimize }) {
     return (
         <div className="org-switch">
             <div className="org-info">
-                {!isMinimized && <div className="org-logo">Smooth UI</div>}
-                {layout !== 'top' && (
+                <div className="org-logo-container">
+                    <span className="logo-icon">{logo}</span>
+                    {!isMinimized && <span className="org-name">{orgName}</span>}
+                </div>
+                {layout === 'side' && (
                     <button className="menu-button" onClick={onToggleMinimize}>
-                        <span className="menu-icon"><AiOutlineMenu size={16} /></span>
+                        {isMinimized ? <AiOutlineArrowRight size={16} /> : <AiOutlineArrowLeft size={16} />}
                     </button>
                 )}
+                </div>
             </div>
-        </div>
     );
 }
 
