@@ -1,0 +1,35 @@
+{
+  "name": "@Bhavikkpatel/smooth-ui",
+  "version": "1.0.0",
+  "description": "react ui component framework",
+  "scripts": {
+    "rollup": "rollup -c"
+  },
+  "author": "Bhavikk D Patel",
+  "license": "ISC",
+  "dependencies": {
+    "react": "^19.0.0"
+  },
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
+  "files": [
+    "dist"
+  ],
+  "devDependencies": {
+    "@babel/core": "^7.26.9",
+    "@babel/preset-react": "^7.26.3",
+    "@rollup/plugin-babel": "^6.0.4",
+    "@rollup/plugin-commonjs": "^28.0.3",
+    "@rollup/plugin-node-resolve": "^16.0.0",
+    "install": "^0.13.0",
+    "npm": "^10.9.2",
+    "react-icons": "^5.5.0",
+    "rollup": "^4.35.0",
+    "rollup-plugin-dts": "^6.1.1",
+    "rollup-plugin-scss": "^4.0.1",
+    "sass": "^1.85.1"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/Bhavikkpatel"
+  }
+}
