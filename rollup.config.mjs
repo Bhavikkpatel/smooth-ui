@@ -22,7 +22,7 @@ export default [
         sourcemap: true,
       },
     ],
-    external: ['react'],
+    external: ['react', 'react-router-dom'],
     plugins: [
       resolve(),
       commonjs(),
@@ -30,7 +30,13 @@ export default [
         babelHelpers: 'bundled',
         presets: ['@babel/preset-react']
       }),
-      scss()
+      scss({
+        processor: async (input) => {
+          const { compileString } = require('sass');
+          const { css } = await compileString(input, { style: 'compressed' });
+          return css;
+        }
+      })
     ],
   }
 ];

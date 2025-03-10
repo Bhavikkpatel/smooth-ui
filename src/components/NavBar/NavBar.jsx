@@ -1,7 +1,7 @@
 import './nav.scss';
-import NavItem from './NavItem';
-import OrgSwitch from './OrgSwitch';
-import SearchBar from './SearchBar';
+import NavItem from './NavItem.jsx';
+import OrgSwitch from './OrgSwitch.jsx';
+import SearchBar from './SearchBar.jsx';
 import React from 'react';
 
 function NavBar({ layout = 'side', activeColor = '#4361ee', profile = false, navList, logo, orgName, width = '180px', minimizedWidth = '40px' }) {

@@ -1,14 +1,15 @@
 {
   "name": "@Bhavikkpatel/smooth-ui",
-  "version": "1.0.0",
+  "version": "1.0.1-beta",
   "description": "react ui component framework",
   "scripts": {
     "rollup": "rollup -c"
   },
   "author": "Bhavikk D Patel",
   "license": "ISC",
-  "dependencies": {
-    "react": "^19.0.0"
+  "peerDependencies": {
+    "react": "^18.0.0",
+    "react-router-dom": "^6.0.0"
   },
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
