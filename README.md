@@ -86,6 +86,9 @@ The component styles are built with SCSS and can be customized using CSS variabl
   --active-bg-color: #ffffff;
 }
 ```
+NavBar sample
+
+![image](https://github.com/user-attachments/assets/6623a831-5838-4849-9d12-01c3850b4009)
 
 ## License
 
